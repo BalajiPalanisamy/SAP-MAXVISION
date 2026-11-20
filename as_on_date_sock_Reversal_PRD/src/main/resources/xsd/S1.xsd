@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Receipt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pk_branchid" type="xs:unsignedByte" />
+              <xs:element name="branchname" type="xs:string" />
+              <xs:element name="PurchaseDate" type="xs:dateTime" />
+              <xs:element name="PK_SupplierId" type="xs:unsignedByte" />
+              <xs:element name="SupplierName" type="xs:string" />
+              <xs:element name="PurchaseType" type="xs:string" />
+              <xs:element name="PK_DeptId" type="xs:unsignedByte" />
+              <xs:element name="DeptName" type="xs:string" />
+              <xs:element name="SupplierInvoiceNo" type="xs:string" />
+              <xs:element name="Pricewithoutgst" type="xs:decimal" />
+              <xs:element name="GSTRate" type="xs:decimal" />
+              <xs:element name="PricewithGST" type="xs:decimal" />
+              <xs:element name="CGST" type="xs:decimal" />
+              <xs:element name="SGST" type="xs:decimal" />
+              <xs:element name="IGST" />
+              <xs:element name="GSTAmount" type="xs:decimal" />
+              <xs:element name="AmountwithoutGST" type="xs:decimal" />
+              <xs:element name="DiscountAmount" type="xs:decimal" />
+              <xs:element name="AmountwithGST" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ApiType" type="xs:string" />
+        <xs:element name="Lines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceID" type="xs:unsignedByte" />
+              <xs:element name="CompanyCode" type="xs:string" />
+              <xs:element name="Transaction" type="xs:unsignedByte" />
+              <xs:element name="InvoicingParty" type="xs:unsignedByte" />
+              <xs:element name="Reference" type="xs:string" />
+              <xs:element name="DocumentDate" type="xs:string" />
+              <xs:element name="PostingDate" type="xs:string" />
+              <xs:element name="DocumentType" type="xs:string" />
+              <xs:element name="DocumentHeaderText" type="xs:string" />
+              <xs:element name="Currency" type="xs:string" />
+              <xs:element name="GrossInvoiceAmountInDocumentCurrency" type="xs:decimal" />
+              <xs:element name="BusinessPlace" type="xs:string" />
+              <xs:element name="DateForDeterminingTaxRates" type="xs:string" />
+              <xs:element name="GLAccount" type="xs:string" />
+              <xs:element name="ItemText" type="xs:string" />
+              <xs:element name="DebitCreditIndicator" type="xs:string" />
+              <xs:element name="AmountInDocumentCurrency" type="xs:decimal" />
+              <xs:element name="TaxCode" type="xs:string" />
+              <xs:element name="Assignment" />
+              <xs:element name="CostCenter" type="xs:string" />
+              <xs:element name="ProfitCenter" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
